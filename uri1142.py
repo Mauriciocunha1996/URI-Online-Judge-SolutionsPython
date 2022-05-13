@@ -1,7 +1,10 @@
 N = int(input(''))
-
+limite = N * 4
 cont = 0
-while cont < N:
+for i in range(1, limite):
     cont += 1
-    print(f'{cont} PUM\n' if cont % 3 == 0 else f'{cont}', end=' ')
+    if i % 3 == 0:
+        print(f'{i} PUM', sep='\n')
+    else:
+        print(i, end=' ')
 
